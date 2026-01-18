@@ -1,96 +1,25 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Lousy Colour Trend</title>
-<style>
-    body {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        height: 100vh;
-        font-family: Arial, sans-serif;
-        transition: background-color 0.5s;
-        background-color: #f0f0f0;
-    }
-    #colour-box {
-        width: 300px;
-        height: 300px;
-        border-radius: 20px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 24px;
-        color: white;
-        text-shadow: 1px 1px 3px black;
-        margin-bottom: 20px;
-        transition: all 0.5s;
-    }
-    button {
-        padding: 12px 25px;
-        font-size: 18px;
-        cursor: pointer;
-        border-radius: 10px;
-        border: none;
-        background-color: #333;
-        color: white;
-        transition: 0.3s;
-    }
-    button:hover {
-        background-color: #555;
-    }
-</style>
-</head>
-<body>
-    <div id="colour-box">#FFFFFF</div>
-    <button onclick="showTrendingColour()">Show Trending Colour</button>
+document.addEventListener("mousedown", function(event) {
 
-<script>
-// Prediction number example
-const predictionNumber = "20260118100010600";
-
-// Mapping digits to colours (change mapping as per your system)
-const digitColourMap = {
-    "0": "#000000", // black / neutral
-    "1": "#FF0000", // red
-    "2": "#00FF00", // green
-    "3": "#0000FF", // blue
-    "4": "#FFFF00", // yellow
-    "5": "#FFA500", // orange
-    "6": "#800080", // purple
-    "7": "#00FFFF", // cyan
-    "8": "#FFC0CB", // pink
-    "9": "#808080"  // grey
-};
-
-// Function to convert prediction number to colours
-function getColoursFromNumber(number) {
-    const colours = [];
-    for (let char of number) {
-        if (digitColourMap[char]) {
-            colours.push(digitColourMap[char]);
-        }
-    }
-    return colours;
 }
 
-// Main function to show trending colour
-function showTrendingColour() {
-    const colours = getColoursFromNumber(predictionNumber);
+if ((event.button = 0)) {
 
-    // Pick a trending colour based on date (you can randomize or use formula)
-    const date = new Date();
-    const index = date.getDate() % colours.length; // changes daily
-    const selectedColour = colours[index];
+120k
 
-    // Update website
-    const box = document.getElementById("colour-box");
-    box.style.backgroundColor = selectedColour;
-    box.textContent = selectedColour;
-    document.body.style.backgroundColor = selectedColour + "33"; // light bg effect
+Input.mouse.left true;
+
+if ((event.button = 1)) {
+
+Input.mouse.middle = true;
+
 }
-</script>
-</body>
-</html>
+
+Dislike
+
+if ((event.button = 2)) {
+
+}
+
+Input.mouse.right = true;
+
+});
